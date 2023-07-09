@@ -1,0 +1,3 @@
+## Kalman Filter
+
+Abdotonomous utilizes a Kalman Filter to generate a more accurate approximation of the system's quantities. The Kalman Filter takes input data from various sensors, such as lidar and radar, and produces a refined estimate of the vehicle's position, velocity, and other relevant parameters. This feature is particularly useful for autonomous vehicles operating in challenging environments where sensor data may be noisy or incomplete. To take advantage of the Kalman Filter, simply enable it in the Abdotonomous system and let the system do the rest.

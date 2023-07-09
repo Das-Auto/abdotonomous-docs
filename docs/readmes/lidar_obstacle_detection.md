@@ -1,0 +1,3 @@
+## Lidar Obstacle Detection
+
+Abdotonomous utilizes Point Cloud Data (PCD) coordinates to detect and cluster obstacles surrounding the vehicle. By analyzing the PCD data, the system can identify objects in the vehicle's path and adjust its trajectory accordingly to avoid collisions. The Lidar Obstacle Detection feature is particularly useful for vehicles operating in challenging environments, such as construction sites or busy city streets. To activate the feature, simply enable it in the Abdotonomous system and let the system do the rest.
