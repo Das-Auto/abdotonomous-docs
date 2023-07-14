@@ -1,14 +1,17 @@
 site_name: Abdotonomous
-repo_url: https://github.com/Das-Auto/abdotonomous-docsi
+# repo_url: https://github.com/Das-Auto/abdotonomous-docsi
 nav:
     
     - 🚗 Home: index.md
     - Technical Docs:
-        - 'Features':
-            - 'TTC Feature': readmes/ttc.md
-            - 'Kalman Filter': readmes/kalman_filter.md
-            - 'Lidar Obstacle Detection': readmes/lidar_obstacle_detection.md
-            - 'GPS': readmes/gps.md
+            - 'Overall Structure' : readmes/overall_structure.md
+            - 'Features': 
+              - 'TTC Feature': readmes/ttc.md
+              - '*Unscented Kalman Filter': readmes/kalman_filter.md
+              - 'Lidar Obstacle Detection': readmes/lidar_obstacle_detection.md
+              - 'GPS': readmes/gps.md
+            - 'Sensors': readmes/ttc.md
+            - 'Integrations': readmes/ttc.md
 theme:
   logo: assets/wheel_logo.svg
   favicon: assets/wheel_logo_black.svg
