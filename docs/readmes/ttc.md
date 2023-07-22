@@ -1,5 +1,0 @@
-## Time to Collision
-
-The Time-to-Collision (TTC) feature in Abdotonomous evaluates the distance between your vehicle and the vehicle in front of you using a combination of camera and lidar data. By fusing these data sources, the system can estimate how long it will take for the two vehicles to collide if they continue on their current paths. This information can be incredibly valuable for preventing collisions and ensuring safe driving. To activate the TTC feature, simply enable it in the Abdotonomous system and let the system do the rest.
-
-Because of budget constraints, we have employed a single camera mounted on the car's windshield along with lidar points to estimate distance using openCV descriptors. It should be noted that this feature assumes that the car is driving at a constant velocity.
