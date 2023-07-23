@@ -2,19 +2,14 @@ site_name: Abdotonomous
 # repo_url: https://github.com/Das-Auto/abdotonomous-docsi
 nav:
     
-    - 🚗 Home: index.md
+    - Home: index.md
     - Technical Docs:
-            - 'Overall Structure' : readmes/overall_structure.md
+            - 'Project Structure' : readmes/project_structure.md
             - 'Features': readmes/features.md
-              # - 'TTC Feature': readmes/ttc.md
-              # - '*Unscented Kalman Filter': readmes/kalman_filter.md
-              # - 'Lidar Obstacle Detection': readmes/lidar_obstacle_detection.md
-              # - 'GPS': readmes/gps.md
-            # - 'Sensors': readmes/ttc.md
-            # - 'Integrations': readmes/ttc.md
             - 'Jetson Nano':
               - 'Getting Started': readmes/Jetson_Nano/getting_started.md
               - 'Dependencies': readmes/Jetson_Nano/dependencies.md
+            # - 'Test': readmes/tests.md
 theme:
   logo: assets/wheel_logo.svg
   favicon: assets/wheel_logo_black.svg
@@ -70,6 +65,13 @@ theme:
       primary: teal
       secondary: lime
       accent: yellow
+
+plugins:
+  - glightbox
+  - search
+  - git-authors
+
+
     
 extra:
     social:
@@ -128,6 +130,22 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - abbr
+  - attr_list
+  - pymdownx.snippets
 
 
 

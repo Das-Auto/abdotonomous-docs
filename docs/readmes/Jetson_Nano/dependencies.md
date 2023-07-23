@@ -3,13 +3,9 @@
 
 ## Getting Started
 
-First things first. I installed neofetch to check my micro-computer specs
+Firstly, I installed `neofetch` to check the specifications of my micro-computer.
 
-![](/docs/assets/nano/dependencies_1.png)
-
-<img src="../../assets/nano/dependencies_1.png">
-
-<!-- <img src="assets/nano/dependencies_1.png"> -->
+![](../../assets/nano/dependencies_1.png){ loading=lazy }
 
 ## Other Dependencies
 
@@ -48,13 +44,11 @@ Best explanation ever is available [here](https://github.com/udacity/SFND_2D_Fea
    ```
 
 ???+ Info
-    The setup may take long time (> 3 hrs). You may then need to reboot the device and restart the setup
-    OpenCV installation takes long time. More than 2 hours.
+    The setup process may take a long time (over 3 hours). If necessary, you may need to reboot the device and restart the setup. The installation of OpenCV may take a considerable amount of time, potentially exceeding 2 hours.
 
 <br>
 
-![](/docs/assets/nano/dependencies_2.webp)
-
+![](/../../assets/nano/dependencies_2.jpg){ loading=lazy }
 
 
 ### g++ (already installed)
@@ -75,11 +69,10 @@ Best explanation ever is available [here](https://github.com/udacity/SFND_2D_Fea
 
 
 ???+ Warning
-    
-    ROS II Foxy requires Ubuntu 20. Remember `neofetch`? We use Ubuntu 18. So, we have to use docker to install it.
+    ROS II Foxy requires Ubuntu 20 as the minimum operating system version. As we are currently using Ubuntu 18 (as checked with neofetch), we will need to install ROS II Foxy using Docker.
 
 
-![](/docs/assets/nano/dependencies_3.png)
+![](/../../assets/nano/dependencies_3.png){ loading=lazy }
 
 
 `docker run -it ros:foxy`

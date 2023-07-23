@@ -1,4 +1,6 @@
-# Jetson Nano Guide for Absolute Beginners
+<!-- # Jetson Nano Guide for Absolute Beginners -->
+
+---
 
 ???+ info inline end 
     This guide is typically for NVIDIA Jetson Nano Developer Kit 4GB
@@ -10,8 +12,7 @@
 
 ## Pre-install
 
-Before installing your nano, you have to prepare for some stuff first.
-
+Prior to installing your Nano, you need to prepare a few things first.
 ### Physical Components
 
 - [x] Micro-SD, recommend 32 Gb at least
@@ -29,8 +30,9 @@ Before installing your nano, you have to prepare for some stuff first.
 ???+ tip
     You may use your mobile charger for the setup, if it meets the minimum requirements (5V and >= 2A)
 
+
 ???+ Danger
-    Never use higher voltage. Yet, it is OK for higher current
+     Never use a higher voltage than recommended. However, it is generally safe to use a power supply with a higher current rating than required.
 
 
 
@@ -40,59 +42,60 @@ Before installing your nano, you have to prepare for some stuff first.
 
 ## Burn the OS Image
 
-We have two different options. Either via command line (which I prefer), or via Etcher
+We have two different options available: either via the command line (which I prefer) or through Etcher.
 
 ### Etcher
 
 <!-- fix here and stackoverflow -->
 
-Etcher is well-explained [here]() (I recommend reading this, if you prefer GUI)
+Etcher is well-explained [here](https://www.youtube.com/watch?v=cf30ZQWauI8) (I recommend watching this)
 
 ### Command Line
 
 - Check device name by inserting the SD-card and typing `sudo fdisk -l` in your terminal
-- Now, eject the device and notice which device isn't available now (obviously, the SD-card)
+- Now, eject the device and observe which device is no longer available (which will be the SD card, obviously).
 - Unmount the partitions by `sudo umount <device-name>`
 - `sudo dd bs=1M if=your_image_file_name.img of=/dev/<device-name>`
 
-<!-- I have tried to use my mobile phone as a reader. Yet, it didn't work. So, please make sure you have a reader. ( I had to buy one for it)
- -->
+
 
 ???+ Note
-    I have tried to use my mobile phone as a reader. Yet, it didn't work. So, please make sure you have a reader. ( I had to buy one for it)
+    I tried to use my mobile phone as a reader; however, it did not work. Therefore, please ensure that you have a compatible reader for the task. (In my case, I had to purchase one.)
 
 
 
 ## The Real Installation
 
-1. Insert your SD-card into your Jetson Nano (the slot is a lit bit tricky)
-2. Connect whatever peripherals you may need (keyboard, mouse, and monitor)
+1. Insert your SD card into your Jetson Nano's slot, which can be a bit tricky.
+2.Connect any necessary peripherals, such as a keyboard, mouse, and monitor.
 3. Plug the power, and voila
 
-![](../../assets/nano/jetson_1.webp)
+![](../../assets/nano/jetson_1.webp){ loading=lazy }
+
 
 ???+ Tip
-    I'm using wireless mini keyboard to lessen the power load over my Jetson Nano
 
-1. You may observe the OS is booting. Wait until the welcome page is there
+    I am using a [wireless mini keyboard](https://www.amazon.com/Keyboard-Rii-Portable-Controller-Rechargeable/dp/B07D2BG6R5/ref=sr_1_3?keywords=mini+wireless+keyboard&qid=1690128922&sr=8-3) to reduce the power load on my Jetson Nano.
 
-![](../../assets/nano/jetson_2.webp)
+
+1. You should observe that the operating system is booting up. Please wait until the welcome page appears.
+
+![](../../assets/nano/jetson_2.webp){ loading=lazy }
 
 <br>
 
 ???+ Tip
-    The setup may take long time (> 3 hrs). You may then need to reboot the device and restart the setup
+    Please note that the setup process may take a long time (over 3 hours). If necessary, you may need to reboot the device and restart the setup.
 
 
 
 
-1. Once this is done, just select the default parameters and let the setup work by itself
+1. Once this is done, simply select the default parameters and allow the setup to run automatically.
 
-![](../../assets/nano/jetson_3.webp)
-![](../../assets/nano/jetson_4.webp)
-![](../../assets/nano/jetson_5.webp)
-![](../../assets/nano/jetson_6.webp)
+![](../../assets/nano/jetson_3.webp){ loading=lazy }
+![](../../assets/nano/jetson_4.webp){ loading=lazy }
+![](../../assets/nano/jetson_5.webp){ loading=lazy }
+![](../../assets/nano/jetson_6.webp){ loading=lazy }
 
-Finally, it asks you to restart. Restart
-
-![](../../assets/nano/jetson_7.webp)
+Finally, the setup will prompt you to restart the device. Please restart the device.
+![](../../assets/nano/jetson_7.webp){ loading=lazy }

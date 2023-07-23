@@ -2,3 +2,9 @@
     --md-primary-fg-color:        #40babd;
   }
   
+
+  .md-typeset  .md-button{
+  display: flex;
+  flex-direction: column !important;
+  text-align: center;
+}
