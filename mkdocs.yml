@@ -68,8 +68,6 @@ theme:
 
 plugins:
   - glightbox
-  - search
-  - git-authors
 
 
     

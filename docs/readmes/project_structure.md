@@ -1,5 +1,3 @@
-{{ git_page_authors }}
-
 # Project Structure
 
 ---
